@@ -1,23 +1,4 @@
 
-// COLOURS:
-// primary text (blue): #084b6d;
-// secondary (light blue): #f4fcff;
-// tertiary (green): #f8fbf3; 
-// quaternary (pink): #fff5f5; 
-// quinary (orange): #ffd698;
-// pastel blue: #d3f0f9 
-// white: #fff; 
-
-// Go here for the rest of the code-along: 
-// https://github.com/HackerYou/bootcamp-notes/blob/main/css/ecommerce-codealong-home.md
-
-// HEADINGS:
-// h1: 28px;
-// h2: 40px;
-// h3: 54px;
-// h4: 34px;
-// h5: 14px;
-
 @use "./partials/setup";
 @use "./partials/variables";
 @use "./partials/typography";
@@ -25,6 +6,5 @@
 @use "./partials/header";
 @use "./partials/footer";
 @use "./partials/nav";
-@use "./partials/main";
 @use "./partials/sections";
 @use "./partials/mediaQueries";

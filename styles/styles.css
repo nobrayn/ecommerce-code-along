@@ -8,7 +8,12 @@ body {
   margin: 0;
 }
 
-article, aside, footer, header, nav, section {
+article,
+aside,
+footer,
+header,
+nav,
+section {
   display: block;
 }
 
@@ -17,7 +22,9 @@ h1 {
   margin: 0.67em 0;
 }
 
-figcaption, figure, main {
+figcaption,
+figure,
+main {
   display: block;
 }
 
@@ -49,15 +56,19 @@ abbr[title] {
           text-decoration: underline dotted;
 }
 
-b, strong {
+b,
+strong {
   font-weight: inherit;
 }
 
-b, strong {
+b,
+strong {
   font-weight: bolder;
 }
 
-code, kbd, samp {
+code,
+kbd,
+samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
@@ -75,7 +86,8 @@ small {
   font-size: 80%;
 }
 
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -90,7 +102,8 @@ sup {
   top: -0.5em;
 }
 
-audio, video {
+audio,
+video {
   display: inline-block;
 }
 
@@ -107,31 +120,46 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   font-family: sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
 }
 
-button, input {
+button,
+input {
   overflow: visible;
 }
 
-button, select {
+button,
+select {
   text-transform: none;
 }
 
-button, html [type=button], [type=reset], [type=submit] {
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
-button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -158,13 +186,15 @@ textarea {
   overflow: auto;
 }
 
-[type=checkbox], [type=radio] {
+[type=checkbox],
+[type=radio] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
 }
 
-[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -173,7 +203,8 @@ textarea {
   outline-offset: -2px;
 }
 
-[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -182,7 +213,8 @@ textarea {
   font: inherit;
 }
 
-details, menu {
+details,
+menu {
   display: block;
 }
 
@@ -202,14 +234,9 @@ template {
   display: none;
 }
 
-html {
+* {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 .sr-only {
@@ -327,6 +354,90 @@ a {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+/* Once again, we need to import our variables partial in this file, and prefix variables with 'variables.: */
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+button {
+  color: #084b6d;
+  background-color: transparent;
+  padding: 18px 36px;
+  border: 2px solid #084b6d;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  /* style the button in the main nav menu to look just like an icon */
+}
+button:hover {
+  background-color: #084b6d;
+  color: #fff;
+}
+button:focus {
+  background-color: #084b6d;
+  color: #fff;
+}
+button.secondary {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+  padding: 8px 12px;
+}
+button.secondary:hover {
+  background-color: #fff;
+  color: #084b6d;
+}
+button.secondary:focus {
+  background-color: #fff;
+  color: #084b6d;
+}
+button.solid {
+  color: #fff;
+  background-color: #084b6d;
+}
+button.solid:hover {
+  color: #084b6d;
+  background-color: #fff;
+}
+button.menuIcon {
+  display: inherit;
+  padding: 0;
+  border: none;
+}
+button.menuIcon:hover {
+  background-color: transparent;
+}
+button.menuIcon:focus {
+  background-color: transparent;
+}
+
+a.button {
+  color: #084b6d;
+  background-color: transparent;
+  padding: 18px 36px;
+  border: 2px solid #084b6d;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+a.button:hover {
+  background-color: #084b6d;
+  color: #fff;
+}
+a.button:focus {
+  background-color: #084b6d;
+  color: #fff;
 }
 
 header {
@@ -510,62 +621,6 @@ footer .footerNav nav a:focus {
           align-items: center;
   width: 100%;
 }
-.categoryGallery .item {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
-  padding: 45px;
-  margin: 50px 25px 25px;
-  border-radius: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-.categoryGallery .item img {
-  max-width: 100%;
-  border-radius: 10%;
-  margin-bottom: 20px;
-}
-.categoryGallery .item:hover {
-  scale: 0.95; /* transform: scale() is legacy */
-}
-.categoryGallery .itemOne {
-  background-color: #ffd698;
-}
-.categoryGallery .itemTwo {
-  background-color: #f4fcff;
-}
-.categoryGallery .itemThree {
-  background-color: #f8fbf3;
-}
-.categoryGallery .itemFour {
-  background-color: #fff5f5;
-}
-
-.categoryGallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 .categoryGallery .items {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
@@ -579,12 +634,12 @@ footer .footerNav nav a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 .categoryGallery .items img {
@@ -613,10 +668,53 @@ footer .footerNav nav a:focus {
   background-color: #fff5f5;
 }
 
+.play {
+  background-image: url(../assets/background-image.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+.play .playContainer {
+  max-width: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 70px 45px;
+  border: 24px solid #f4fcff;
+  background-color: #fff;
+}
+
 @media (max-width: 1000px) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
-  .item p {
-    font-size: 0.8rem;
+  footer .footerFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 100px;
+  }
+  footer .footerFlexContainer .logo {
+    margin-bottom: 30px;
+  }
+  footer .footerNav {
+    width: 80%;
   }
 }
 @media (max-width: 800px) {

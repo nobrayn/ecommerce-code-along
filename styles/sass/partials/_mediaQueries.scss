@@ -1,7 +1,18 @@
 @media (max-width: 1000px) {
     /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
-    .item p {
-        font-size: 0.8rem;
+    footer{
+        .footerFlexContainer {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 100px;
+            .logo{
+                margin-bottom: 30px;
+            }
+        }
+
+        .footerNav {
+            width: 80%;
+        }
     }
 }
 
